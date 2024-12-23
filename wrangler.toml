@@ -10,6 +10,7 @@ workers_dev = false
 upload_source_maps = true 
 
 routes = [
+    "echo.cyberjake.xyz/*",
     "*.echo.cyberjake.xyz/*"
 ]
 
