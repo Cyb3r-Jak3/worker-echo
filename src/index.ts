@@ -14,6 +14,7 @@ app.get('/version', (c) => {
 	return JSONResponse({
 		version: c.env.BuiltTime,
 		built: c.env.GitHash,
+		commitUrl: `https:://github.com/Cyb3r-Jak3/worker-echo/commit/${c.env.GitHash}`,
 	})
 })
 
