@@ -6,9 +6,16 @@ import { describe, it, expect } from 'vitest';
 // `Request` to pass to `worker.fetch()`.
 const IncomingRequest = Request<unknown, IncomingRequestCfProperties>;
 
-describe('200 Response', () => {
-	it('responds with Hello World! (unit style)', async () => {
+describe('/', () => {
+	it('200 /', async () => {
 		const response = await SELF.fetch("http://example.com")
+		expect(response.status).toBe(200);
+	});
+});
+
+describe('/version', () => {
+	it('200 /version', async () => {
+		const response = await SELF.fetch("http://example.com/version")
 		expect(response.status).toBe(200);
 	});
 });
