@@ -10,6 +10,7 @@ app.get('/', (c) => {
 		cf: c.req.raw.cf,
 	})
   })
+
 app.get('/version', (c) => {
 	return JSONResponse({
 		version: c.env.BuiltTime,
