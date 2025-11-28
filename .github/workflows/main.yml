@@ -63,7 +63,7 @@ jobs:
             token: ${{ secrets.CODECOV_TOKEN }}
         env:
             NODE: ${{ matrix.node-version }}
-  
+
       - name: Upload test results to Codecov
         if: ${{ !cancelled() }}
         uses: codecov/test-results-action@v1
@@ -82,7 +82,7 @@ jobs:
           command: deploy
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          wranglerVersion: 3.99.0
+          wranglerVersion: 4.51.0
           secrets: |
             GitHash
             BuiltTime

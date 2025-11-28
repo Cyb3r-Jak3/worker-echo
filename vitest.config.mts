@@ -5,9 +5,12 @@ export default defineWorkersConfig({
 	plugins: [
 		// Put the Codecov vite plugin after all other plugins
 		codecovVitePlugin({
-		  enableBundleAnalysis: process.env.CODECOV_TOKEN !== undefined,
+		  enableBundleAnalysis: true,
 		  bundleName: "worker-echo",
-		  uploadToken: process.env.CODECOV_TOKEN,
+		  oidc: {
+			useGitHubOIDC: true,
+		  },
+		  telemetry: false,
 		}),
 	  ],
 	test: {

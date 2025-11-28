@@ -10,16 +10,16 @@
     "cf-typegen": "wrangler types"
   },
   "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.5.2",
-    "@cloudflare/workers-types": "^4.20241218.0",
-    "@codecov/vite-plugin": "^1.6.0",
-    "@vitest/coverage-istanbul": "2.1.8",
+    "@cloudflare/vitest-pool-workers": "^0.10.11",
+    "@cloudflare/workers-types": "^4.20251128.0",
+    "@codecov/vite-plugin": "^1.9.1",
+    "@vitest/coverage-istanbul": "3.2.4",
     "typescript": "^5.5.2",
-    "vitest": "2.1.9",
-    "wrangler": "^3.99.0"
+    "vitest": "~3.2.0",
+    "wrangler": "^4.51.0"
   },
   "dependencies": {
     "@cyb3r-jak3/workers-common": "^5.4.1",
-    "hono": "^4.10.3"
+    "hono": "^4.10.7"
   }
 }
