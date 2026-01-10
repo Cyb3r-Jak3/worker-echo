@@ -13,7 +13,7 @@ importers:
         version: 5.5.1
       hono:
         specifier: ^4.10.7
-        version: 4.10.7
+        version: 4.11.3
     devDependencies:
       '@cloudflare/vitest-pool-workers':
         specifier: ^0.12.1
@@ -967,8 +967,8 @@ packages:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
 
-  hono@4.10.7:
-    resolution: {integrity: sha512-icXIITfw/07Q88nLSkB9aiUrd8rYzSweK681Kjo/TSggaGbOX4RRyxxm71v+3PC8C/j+4rlxGeoTRxQDkaJkUw==}
+  hono@4.11.3:
+    resolution: {integrity: sha512-PmQi306+M/ct/m5s66Hrg+adPnkD5jiO6IjA7WhWw0gSBSo1EcRegwuI1deZ+wd5pzCGynCcn2DprnE4/yEV4w==}
     engines: {node: '>=16.9.0'}
 
   html-escaper@2.0.2:
@@ -2128,7 +2128,7 @@ snapshots:
 
   has-flag@4.0.0: {}
 
-  hono@4.10.7: {}
+  hono@4.11.3: {}
 
   html-escaper@2.0.2: {}
 
