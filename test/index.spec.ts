@@ -19,3 +19,10 @@ describe('/version', () => {
 		expect(response.status).toBe(200);
 	});
 });
+
+describe('/v1/traces', () => {
+	it('202 /v1/traces', async () => {
+		const response = await SELF.fetch("http://example.com/v1/traces")
+		expect(response.status).toBe(202);
+	});
+});

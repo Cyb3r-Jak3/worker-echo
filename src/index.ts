@@ -19,5 +19,8 @@ app.get('/version', (c) => {
 	})
 })
 
+app.get('/v1/traces', (c) => {
+	return c.json({ message: 'Trace accepted' }, { status: 202 })
+})
 
 export default app
