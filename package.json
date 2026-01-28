@@ -19,6 +19,6 @@
   },
   "dependencies": {
     "@cyb3r-jak3/workers-common": "^5.4.1",
-    "hono": "^4.11.4"
+    "hono": "^4.11.7"
   }
 }
